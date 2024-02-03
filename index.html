@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+
+            <input type="text" id="result">
+
+            <div class="upper">
+
+                <div class="numbers">
+                    <button onclick="appendValue(1)" class="buttons">1</button>
+                    <button onclick="appendValue(2)" class="buttons">2</button>
+                    <button onclick="appendValue(3)" class="buttons">3</button>
+                    <button onclick="appendValue(4)" class="buttons">4</button>
+                    <button onclick="appendValue(5)" class="buttons">5</button>
+                    <button onclick="appendValue(6)" class="buttons">6</button>
+                    <button onclick="appendValue(7)" class="buttons">7</button>
+                    <button onclick="appendValue(8)" class="buttons">8</button>
+                    <button onclick="appendValue(9)" class="buttons">9</button>
+                    <button onclick="appendValue(0)" class="buttons extra">0</button>
+                    <button onclick="appendValue('.')" class="buttons">.</button>
+                    <button onclick="calculateResult()" class="buttons orange a">=</button>
+                </div>
+
+                <div class="operations">
+                    <button onclick="allClear()" class="buttons orange">AC</button>
+                    <button onclick="appendValue('+')"  class="buttons orange">+</button>
+                    <button onclick="appendValue('-')"  class="buttons orange">-</button>
+                    <button onclick="appendValue('+')"  class="buttons orange">*</button>
+                    <button onclick="appendValue('/')"  class="buttons orange">/</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <script  src="script.js"></script>
+</body>
+
+</html>
